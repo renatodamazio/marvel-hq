@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a88f8258.chunk.css",
+    "main.js": "/static/js/main.7f9849a3.chunk.js",
+    "main.js.map": "/static/js/main.7f9849a3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.98d401fb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.98d401fb.js.map",
+    "static/js/2.c23a76d2.chunk.js": "/static/js/2.c23a76d2.chunk.js",
+    "static/js/2.c23a76d2.chunk.js.map": "/static/js/2.c23a76d2.chunk.js.map",
+    "static/js/3.22f3f299.chunk.js": "/static/js/3.22f3f299.chunk.js",
+    "static/js/3.22f3f299.chunk.js.map": "/static/js/3.22f3f299.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a88f8258.chunk.css.map": "/static/css/main.a88f8258.chunk.css.map",
+    "static/js/2.c23a76d2.chunk.js.LICENSE.txt": "/static/js/2.c23a76d2.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/static/media/spider-web.ca59e1a6.png",
+    "static/media/hulk_800_1.dfca36f1.gif": "/static/media/hulk_800_1.dfca36f1.gif",
+    "static/media/load.6d7f2609.gif": "/static/media/load.6d7f2609.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98d401fb.js",
+    "static/js/2.c23a76d2.chunk.js",
+    "static/css/main.a88f8258.chunk.css",
+    "static/js/main.7f9849a3.chunk.js"
+  ]
+}
