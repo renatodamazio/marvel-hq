@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CollectionBar({data}) {
+function CollectionBar({data, setHero}) {
     const sendEmailToAFriend = () => {
         let body = '';
         let characters = '';
@@ -21,10 +21,6 @@ function CollectionBar({data}) {
             characters = ''
         });
 
-
-        console.log(body);
-
-
         var link = "mailto:me@example.com"
             + "?cc=myCCaddress@example.com"
             + "&subject=" + encodeURIComponent("Olha que legal essas HQ's que eu selecionei para você!")
@@ -35,22 +31,25 @@ function CollectionBar({data}) {
     };
 
     return (
-        <div>
-            {data.length} {data.length > 1 ? "HQ's selecionadas" : "HQ selecionada"}
-            <ol>
-                {
-                    data.map((hq) => {
-                        return (
-                            <div>
-                                <img width="40px" height="40px" src={`${hq.images[0].path}.${hq.images[0].extension}`}/>
-                            </div>
-                        )
-                    })
-                }
-            </ol>
-
-            <button onClick={() => { sendEmailToAFriend() }} type="button">Enviar para um amigo(a)</button>
-        </div>
+        <footer className="footer">
+            <div className="selected-hd-info">
+                {data.length} {data.length > 1 ? "HQ's selecionadas" : "HQ selecionada"}
+                <ol className="selected-hq-list">
+                    {
+                        data.map((hq) => {
+                            return (
+                                <li className="selected-hq" onClick={() => { setHero(hq) }}>
+                                    <img width="40px" height="40px" src={`${hq.images[0].path}.${hq.images[0].extension}`}/>
+                                </li>
+                            )
+                        })
+                    }
+                </ol>
+            </div>
+            <div className="selected-hd-action">
+                <button onClick={() => { sendEmailToAFriend() }} type="button">Enviar para um amigo(a)</button>
+            </div>
+        </footer>
     );
 }
 

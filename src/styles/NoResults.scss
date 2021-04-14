@@ -1,0 +1,20 @@
+.no-results {
+    font-size: .8rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #291831;
+    border-radius: 3px;
+    color: #fff;
+    padding: 16px;
+    
+    img {
+        width: 500px;
+        height: 400px;
+        border-radius: 90px;
+        display: inline-block;
+    }
+}

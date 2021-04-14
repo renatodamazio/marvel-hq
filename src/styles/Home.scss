@@ -1,0 +1,14 @@
+body {
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: #000;
+        z-index: -1;
+        background: url('../images/marvel-superheroes.jpg') top center no-repeat;
+        background-size: cover;
+        opacity: 0.05;
+        filter: grayscale(100%)
+    }
+}
